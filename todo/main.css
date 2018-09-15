@@ -180,7 +180,7 @@ body .container .todo-list .todo-list__items li:hover .todo-list-item__complete 
 }
 .header-style{
     text-align: center;
-    color: lightskyblue;
+    color: deepskyblue;
     font-size: 50px;
 }
 .textbox{
@@ -201,6 +201,7 @@ body .container .todo-list .todo-list__items li:hover .todo-list-item__complete 
     text-decoration: line-through;
 
 }
+
 
 
 

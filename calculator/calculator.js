@@ -16,6 +16,9 @@ app.controller('calcController', function ($scope) {
         if ($scope.operator == '/') {
             x = $scope.a / $scope.b;
         }
+        if ($scope.operator == '%') {
+            x = $scope.a / $scope.b;
+        }
 
         $scope.y = x;
     }
