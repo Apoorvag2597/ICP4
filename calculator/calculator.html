@@ -16,6 +16,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         .login, .input
         {
@@ -28,28 +29,26 @@
         }
     </style>
     <head>
-
+        <h1 align="center"> CALCULATOR </h1> <!-- title is given here -->
 <body>
-<div ng-app="calculator" ng-controller="calcController">
+<div ng-app="calculator" ng-controller="calcController"> <!-- ng directive -->
     <div class="login"></div><br/>
     <div class="input">
-
-        Enter  first operand :<input ng-model="a"></input>
+        Enter  first operand :<input ng-model="a"></input> <!-- ng model is used to bind html and application data -->
         <br/><br/>
         enter second operand :<input ng-model="b"></input>
         <br/><br/>
-        <p><select ng-model="operator">
+        <p><select ng-model="operator"> <!-- drop down is used for selection of operators -->
             <option>+</option>
             <option>*</option>
             <option>-</option>
             <option>/</option>
             <option>%</option>
-
         </select></p>
-        <input type="submit" ng-click="calculate()" value="="></input>
+        <input type="submit" ng-click="calculate()" value="="></input> <!-- calculate function is used for performing the operation -->
         <br/><br/>
 
-        result: {{ y }}
+        result: {{ y }} <! the result is stored in y -->
     </div>
 </
 <div>
@@ -57,5 +56,3 @@
 </body>
 <script src="calculator.js"></script>
 </html>
-
-

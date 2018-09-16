@@ -11,24 +11,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
     <script src="todo.js"></script>
 </head>
-
 <body ng-app="angularTodo" ng-controller="angularTodoC">
-<h1 class="header-style">ToDoList</h1>
-<div class="textbox">
+<h1 class="header-style">TO DO LIST FOR 2018</h1> <!-- title is given -->
+<div class="textbox"> <!-- text box is created -->
     <input type="text" ng-model="todoitem" placeholder="Enter list here">
-    <button ng-click="submitNewItem()" type="button">Add</button>
+    <button ng-click="submitNewItem()" type="button">Add</button>  <! the add button function is called -->
 </div>
 <div class="textbox" ng-repeat="x in items">
     <label class="items">{{x}}</label>
-    <button ng-click="completeItem($index, $event)" type="button">Complete</button>
-    <button ng-click="deleteItem($index)" type="button">Delete</button>
+    <button ng-click="completeItem($index, $event)" type="button">Complete</button> <! the complete button function is called -->
+    <button ng-click="deleteItem($index)" type="button">Delete</button> <!-- the delete button function is called -->
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
